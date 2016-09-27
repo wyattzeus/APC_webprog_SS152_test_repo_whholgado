@@ -1,1 +1,2 @@
-hello, this is the repositry of wyatt
+hello, this is the repository of wyatt
+completed my first commit and push
