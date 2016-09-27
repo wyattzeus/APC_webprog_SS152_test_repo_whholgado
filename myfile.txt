@@ -2,3 +2,4 @@ hello, this is the repository of wyatt
 completed my first commit and push
 bigblackclock
 no 1$ for you
+bitch
