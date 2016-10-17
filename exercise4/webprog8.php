@@ -2,7 +2,11 @@
 <html>
 <head>
 <style>
-<<<<<<< HEAD
+ div {
+    
+    margin-left: 350px;
+
+}
 body { 
  background-image: url("webprog bg pic.jpg");
  background-attachment: fixed;
@@ -13,8 +17,6 @@ body {
 	font-family: batang;
 	font-size: 30px;
 }
-=======
->>>>>>> ae41cf53460d71a6fd53d7c745a283fd915f62c8
 .error {color: #FF0000;}
 </style>
 </head>
@@ -92,29 +94,24 @@ function test_input($data) {
   return $data;
 }
 ?>
-<<<<<<< HEAD
-<center>
-<h2>Enter the following information</h2>
-=======
 
-<h2>PHP Form Validation Example</h2>
->>>>>>> ae41cf53460d71a6fd53d7c745a283fd915f62c8
-<p><span class="error">* required field.</span></p>
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-  Name: <input type="text" name="name" value="<?php echo $name;?>">
+<h2><center>Enter the following information</center></h2>
+<p><center><span class="error">* required field.</span></center></p>
+<div><form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+  Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" name="name" value="<?php echo $name;?>">
   <span class="error">* <?php echo $nameErr;?></span>
   <br><br>
-  Nickname: <input type="text" name="nickname" value="<?php echo $nickname;?>">
+  Nickname: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" name="nickname" value="<?php echo $nickname;?>">
   <span class="error">* <?php echo $nicknameErr;?></span>
   <br><br>
-  E-mail: <input type="text" name="email" value="<?php echo $email;?>">
+  E-mail: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" name="email" value="<?php echo $email;?>">
   <span class="error">* <?php echo $emailErr;?></span>
   <br><br>
-<<<<<<< HEAD
-  Home address: <input type="text" name="homeaddress" value="<?php echo $homeaddress;?>">
-=======
-  Home address: <input type="text" name="homeaddress"><?php  echo $homeaddress;?>
->>>>>>> ae41cf53460d71a6fd53d7c745a283fd915f62c8
+  Home address: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" name="homeaddress" value="<?php echo $homeaddress;?>">
   <br><br>
   Gender:
   <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
@@ -124,32 +121,44 @@ function test_input($data) {
   Cell phone number: <input type="text" name="cellphonenumber" value="<?php echo $cellphonenumber;?>">
   <span class="error">* <?php echo $cellphonenumberErr;?></span>
   <br><br>
-  Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
+  Comment: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <textarea name="comment" rows="3" cols="22"><?php echo $comment;?></textarea>
   <br><br>
-  <input type="submit" name="submit" value="Submit">  
+  </div>
+  <center><input type="submit" name="submit" value="Submit">
 </form>
-
+<h2>Your Input:</h2></center>
+<div style="margin-left:350px">
 <?php
-echo "<h2>Your Input:</h2>";
+echo "Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
 echo $name;
 echo "<br>";
+echo "Nickname:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
 echo $nickname;
 echo "<br>";
+echo "Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
 echo $email;
 echo "<br>";
+echo "Home Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+echo $homeaddress;
+echo "<br>";
+echo "Gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
 echo $gender;
 echo "<br>";
+echo "Cell phone number:&nbsp;&nbsp;";
 echo $cellphonenumber;
 echo "<br>";
+echo "Comment:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
 echo $comment;
-<<<<<<< HEAD
-echo "<br>";
+echo "<br><br>";
+
 
 ?>
-<input type="button" name="b4" value="Back" onclick="location.href='webprog6.html'"><input type="button" name="b5" value="Home" onclick="location.href='webprog5.html'">
-=======
-?>
-
->>>>>>> ae41cf53460d71a6fd53d7c745a283fd915f62c8
+</div>
+<center><input type="button" name="b4" value="Back" onclick="location.href='webprog6.html'"><input type="button" name="b5" value="Home" onclick="location.href='webprog5.html'">
+</center>
 </body>
 </html>
