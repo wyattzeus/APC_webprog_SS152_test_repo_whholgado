@@ -2,6 +2,19 @@
 <html>
 <head>
 <style>
+<<<<<<< HEAD
+body { 
+ background-image: url("webprog bg pic.jpg");
+ background-attachment: fixed;
+ 
+ }
+ h2 {
+    color: black;
+	font-family: batang;
+	font-size: 30px;
+}
+=======
+>>>>>>> ae41cf53460d71a6fd53d7c745a283fd915f62c8
 .error {color: #FF0000;}
 </style>
 </head>
@@ -79,8 +92,13 @@ function test_input($data) {
   return $data;
 }
 ?>
+<<<<<<< HEAD
+<center>
+<h2>Enter the following information</h2>
+=======
 
 <h2>PHP Form Validation Example</h2>
+>>>>>>> ae41cf53460d71a6fd53d7c745a283fd915f62c8
 <p><span class="error">* required field.</span></p>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
   Name: <input type="text" name="name" value="<?php echo $name;?>">
@@ -92,7 +110,11 @@ function test_input($data) {
   E-mail: <input type="text" name="email" value="<?php echo $email;?>">
   <span class="error">* <?php echo $emailErr;?></span>
   <br><br>
+<<<<<<< HEAD
+  Home address: <input type="text" name="homeaddress" value="<?php echo $homeaddress;?>">
+=======
   Home address: <input type="text" name="homeaddress"><?php  echo $homeaddress;?>
+>>>>>>> ae41cf53460d71a6fd53d7c745a283fd915f62c8
   <br><br>
   Gender:
   <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
@@ -120,7 +142,14 @@ echo "<br>";
 echo $cellphonenumber;
 echo "<br>";
 echo $comment;
+<<<<<<< HEAD
+echo "<br>";
+
+?>
+<input type="button" name="b4" value="Back" onclick="location.href='webprog6.html'"><input type="button" name="b5" value="Home" onclick="location.href='webprog5.html'">
+=======
 ?>
 
+>>>>>>> ae41cf53460d71a6fd53d7c745a283fd915f62c8
 </body>
 </html>
