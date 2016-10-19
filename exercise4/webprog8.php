@@ -12,12 +12,17 @@ body {
  background-attachment: fixed;
  
  }
- h2 {
+ h1 {
     color: black;
 	font-family: batang;
+	font-size: 100px;
+}
+ h2 {
+    color: black;
+	font-family: batangche;
 	font-size: 30px;
 }
-.error {color: #FF0000;}
+.error {color: #af111c;}
 </style>
 </head>
 <body>  
@@ -94,8 +99,8 @@ function test_input($data) {
   return $data;
 }
 ?>
-
-<h2><center>Enter the following information</center></h2>
+<h1><center><br><br>MY HOME PAGE</center></h1>
+<h2><center><br><br><br><br><br><br><br><br>Enter the following information</center></h2>
 <p><center><span class="error">* required field.</span></center></p>
 <div><form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
   Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -113,10 +118,12 @@ function test_input($data) {
   Home address: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <input type="text" name="homeaddress" value="<?php echo $homeaddress;?>">
   <br><br>
-  Gender:
+  Gender: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
   <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
   <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
-  <span class="error">* <?php echo $genderErr;?></span>
+  <span class="error">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* 
+  <?php echo $genderErr;?></span>
   <br><br>
   Cell phone number: <input type="text" name="cellphonenumber" value="<?php echo $cellphonenumber;?>">
   <span class="error">* <?php echo $cellphonenumberErr;?></span>
@@ -158,7 +165,7 @@ echo "<br><br>";
 
 ?>
 </div>
-<center><input type="button" name="b4" value="Back" onclick="location.href='webprog6.html'"><input type="button" name="b5" value="Home" onclick="location.href='webprog5.html'">
+<center><input type="button" name="b5" value="About Me" onclick="location.href='webprog5.html'">
 </center>
 </body>
 </html>
