@@ -6,7 +6,7 @@
 <body background="webprog bg pic.jpg">
 <font face="Batang" align="center">
 <center>
-<h1><br>About Me</h1>
+<h1><br>More About Me</h1>
 
 <h2><br>Other interests/hobbies</h2>
 <p id="demo"> 
@@ -33,7 +33,7 @@
 <button type="button" onclick="document.getElementById('demo4').innerHTML = 'Im a GOD!'">Answer</button>
 </p>
 </font>
-<br><br><br><br><br><input type="button" name="b2" value="Back" onclick="location.href='webprog5.php'"><input type="button" name="b3" value="Home" onclick="location.href='webprog8.php'">
+<br><br><br><br><br><input type="button" name="b2" value="Back" onclick="location.href='index.php'"><input type="button" name="b3" value="Home" onclick="location.href='webprog8.php'">
 </body>
 </html>
 
