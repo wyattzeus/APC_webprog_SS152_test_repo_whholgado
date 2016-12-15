@@ -47,9 +47,9 @@ function delete_id(id)
     <th>Name</th>
     <th>Nickname</th>
     <th>Email</th>
+	<th>Phone Number</th>
 	<th>Address</th>
 	<th>Gender</th>
-	<th>Phone Number</th>
 	<th>Comments</th>
 	
     <th colspan="2">Operations</th>
